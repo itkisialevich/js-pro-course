@@ -143,6 +143,29 @@ function isPalindrome(word) {
       }
 }
 
+// or
+
+function isPalindrome(word) {
+  if (word == word.split("").reverse().join("")) {
+    return true;
+  } else {
+    return false
+  }
+}
+
+
+/* 10) Написать функцию, которая принимает первым аргументом массив, а вторым любое значение, функция должна вернуть индекс если такое значение есть в массиве и -1 если его нет. (indexOf, findIndex не использовать!) */
+
+function getIndex(array, value) {
+  let result = -1
+  array.forEach((item, index) => {
+      if(item === value) {
+          result = index
+      }
+  })
+  return result
+}
+
 
 /* 11) Написать функцию search, которая принимает первым аргументом массив имен:
 
