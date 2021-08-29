@@ -86,3 +86,34 @@ function fetchUsers() {
 }
   
 fetchUsers()
+
+/* 7 Сделать запрос при помощи fetch на адрес https://jsonplaceholder.typicode.com/albums/1/photos, вывести фотографии, используя тег img. В качестве src для img использовать поле url в объекте фото
+
+{
+  "albumId": 1,
+  "id": 4,
+  "title": "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
+  "url": "https://via.placeholder.com/600/d32776",
+  "thumbnailUrl": "https://via.placeholder.com/150/d32776"
+},
+
+Дополнительно сделать, чтобы по нажатию на картинку картинка увеличивалась в размерах, повторное нажатие вернет картинку к исходному размеру. Вывести в html внутри div с id = 3*/
+
+let photoBox = document.getElementById("3");
+
+fetch(`https://jsonplaceholder.typicode.com/albums/1/photos`)
+  .then(response => response.json())
+  .then(result => {
+      result.forEach(item => {
+        let photo = document.createElement('img')
+        photo.src = item.url
+        photoBox.append(photo)
+      })
+  })
+
+
+photoBox.addEventListener("click", function (e) {
+  if (e.target.tagName === 'IMG') {    
+    e.target.classList.toggle('bigsize')
+  }
+})
