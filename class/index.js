@@ -136,7 +136,7 @@ class Student extends User {
       let course = today - this.year;
       if (this.year === today) {
          course = 1;
-      } else if (course > 5) {
+      } else if (course > 5 || course < 1) {
         alert('Проверьте дату поступления!')
       } 
       return course;
