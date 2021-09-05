@@ -1,0 +1,131 @@
+body {
+    margin: 0px;
+    font-family: 'Carter One', cursive;
+    color: #ffffff;
+    background-color: #F4E4C1;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: radial-gradient(#0079b2, #001a26); 
+    border-radius: 10px;
+    box-shadow: 13px 13px 25px #737474, -13px -13px 30px #3b3b3c;
+}
+
+.seach-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.label {
+    margin-right: 5px;
+}
+
+.input {
+    margin-right: 5px;
+    padding: 1px;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Prompt', sans-serif;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #ffffff;
+}
+
+.button {
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+    background-color: #f5a32c;
+    border-radius: 5px;
+    border-bottom: 2px solid;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title {
+    margin: 0px;
+    font-size: 60px;
+    font-family: 'Carter One', cursive;
+    letter-spacing: 5.71px;
+    text-transform: uppercase;
+    text-shadow: 6px 4px 5px #001a26;
+}
+
+.city {
+    margin: 0px;
+    font-size: 40px;
+    font-family: 'Carter One', cursive;
+    letter-spacing: 4px;
+    text-shadow: 5px 2px 3px #001a26;
+}
+
+.about-weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.temp-now {
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 2px;
+    color: #f5a32c;
+    text-shadow: 4px 2px 3px #331e01;
+}
+
+.description {
+    margin: 0px;
+    font-size: 30px;
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 3px;
+}
+
+.other-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.temp-feels {
+    font-size: 18px;
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 3px;
+}
+
+.delimiter {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: 'Prompt', sans-serif;
+    color: #f5a32c;
+}
+
+.wild {
+    font-size: 18px;
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 3px;
+}

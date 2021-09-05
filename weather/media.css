@@ -1,0 +1,49 @@
+@media (min-width: 320px) and (max-width: 425px) {
+
+    .app {
+        width: 300px;
+        margin: 10px auto;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .seach-form {
+        margin-bottom: 20px;
+    }
+    
+    .label {
+        display: none;
+    }
+
+    .title-box {
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .city {
+        font-size: 35px;
+    }
+
+    .about-weather {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+
+    .temp-feels, .wild {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .delimiter {
+        margin-left: 7px;
+        margin-right: 7px;
+        font-size: 14px;
+    }
+}
