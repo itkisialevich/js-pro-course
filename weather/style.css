@@ -45,6 +45,10 @@ body {
     border-bottom: 2px solid #ffffff;
 }
 
+input::placeholder {
+    opacity: 0;
+}
+
 .button {
     font-size: 16px;
     font-family: 'Prompt', sans-serif;

@@ -41,21 +41,29 @@ async function getWeather(userCity) {
     description.innerText = `${data.weather[0].description}`;
     wild.innerText = `wild: ${Math.round(data.wind.speed)} m/s`;
 
-    if (data.weather[0].main === "Clouds" && data.weather[0].description === "few clouds") {
+    if (data.weather[0].description === "few clouds") {
       picture.src='image/sunny-cloud.png';
-    } else if (data.weather[0].main === "Clouds" && data.weather[0].description === "scattered clouds") { picture.src='image/sunny-cloud.png';
-    } else if (data.weather[0].main === "Clouds") {
+    } else if (data.weather[0].description === "scattered clouds") { 
       picture.src='image/cloud.png';
-    } else if (data.weather[0].main === "Clear") {
+    } else if (data.weather[0].description === "broken clouds" || data.weather[0].description === "overcast clouds") { picture.src='image/broken-clouds.png';
+  }  else if (data.weather[0].main === "Clear") {
       picture.src='image/sunny.png';
+    } else if (data.weather[0].main === "Rain" && data.weather[0].description === "freezing rain") {
+      picture.src='image/rain-snow.png';
     } else if (data.weather[0].main === "Rain") {
       picture.src='image/rain.png';
+    }  else if (data.weather[0].main === "Drizzle") {
+      picture.src='image/drizzle.png';
     } else if (data.weather[0].main === "Snow") {
       picture.src='image/snow.png';
-    } else if (data.weather[0].main === "Storm") {
+    } else if (data.weather[0].main === "Thunderstorm") {
       picture.src='image/storm.png';
-    } else if (data.weather[0].main === "Fog" || data.weather[0].main === "Mist" || data.weather[0].main === "Haze") {
+    } else if (data.weather[0].main === "Tornado" || data.weather[0].main === "Squall") {
+      picture.src='image/wind.png';
+    } else if (data.weather[0].main === "Fog" || data.weather[0].main === "Mist" || data.weather[0].main === "Haze" || data.weather[0].main === "Smoke") {
       picture.src='image/fog.png';
+    } else if (data.weather[0].main === "Dust" || data.weather[0].main === "Sand" || data.weather[0].main === "Ash") {
+      picture.src='image/dust.png';
     }
   } catch (err) {
     alert("Oops, we can't find a city like this! Sorry!"); 
