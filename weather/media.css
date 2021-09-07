@@ -15,6 +15,14 @@
         display: none;
     }
 
+    input::placeholder {
+        font-size: 16px;
+        font-family: 'Prompt', sans-serif;
+        color: #ffffff;
+        letter-spacing: 3px;
+        opacity: 0.33;
+    }
+
     .title-box {
         margin-bottom: 20px;
     }
