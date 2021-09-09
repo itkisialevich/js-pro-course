@@ -4,7 +4,7 @@ const city = document.querySelector('.city');
 const tempNow = document.querySelector('.temp-now');
 const tempFeels = document.querySelector('.temp-feels');
 const description = document.querySelector('.description');
-const wild = document.querySelector('.wild');
+const wild = document.querySelector('.wind');
 const picture =document.querySelector('img');
 const inputCity = document.querySelector('input');
 const button = document.querySelector('.button');
@@ -39,7 +39,7 @@ async function getWeather(userCity) {
     tempNow.innerText = `${Math.round(data.main.temp)}°C`;
     tempFeels.innerText = `feels like: ${Math.round(data.main.feels_like)}°C`;
     description.innerText = `${data.weather[0].description}`;
-    wild.innerText = `wild: ${Math.round(data.wind.speed)} m/s`;
+    wild.innerText = `wind: ${Math.round(data.wind.speed)} m/s`;
 
     if (data.weather[0].description === "few clouds") {
       picture.src='image/sunny-cloud.png';
